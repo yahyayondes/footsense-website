@@ -30,6 +30,7 @@
         <li><a href="#features">Özellikler</a></li>
         <li><a href="#how-it-works">Nasıl Çalışır</a></li>
         <li><a href="#vision">Vizyon</a></li>
+        <li><a href="#waitlist">Haberdar Ol</a></li>
         <li><a href="#contact">İletişim</a></li>
       </ul>
 
@@ -241,6 +242,58 @@
   </section>
 
   <!-- ============================================================
+       ANKET (Survey)
+       ============================================================ -->
+  <section class="survey" id="survey">
+    <div class="container">
+      <h2 class="section-title reveal">Görüşlerin Bizim İçin <span class="accent">Önemli</span></h2>
+      <p class="section-subtitle reveal">Ürünümüzü senin ihtiyaçlarına göre şekillendiriyoruz.</p>
+
+      <div class="survey-box reveal">
+        <div class="survey-icon">📋</div>
+        <p>FootSense'i geliştirirken senin gibi futbolcuların ihtiyaçlarını anlamak istiyoruz. 2 dakikanı ayırıp anketimize katılır mısın?</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd28HM-HS2aE6XUZjX96YnOY_Xph_AfsbIeerdOKU4L_7lvrg/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          Ankete Katıl
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ÖN KAYIT / HABERDAR OL (Waitlist)
+       ============================================================ -->
+  <section class="waitlist" id="waitlist">
+    <div class="container">
+      <h2 class="section-title reveal">Çıkınca <span class="accent">Haberdar Ol</span></h2>
+      <p class="section-subtitle reveal">İlk kullanıcılar arasında yer al.</p>
+
+      <div class="waitlist-box reveal">
+        <p>FootSense henüz geliştirme aşamasında. Satışa çıktığında ilk haberdar olanlardan ol — e-posta adresini bırak, seni bilgilendirelim.</p>
+
+        <form id="waitlist-form" class="waitlist-form" novalidate>
+          <div class="form-group">
+            <label for="waitlist-email">E-posta Adresi *</label>
+            <input type="email" id="waitlist-email" class="form-input" placeholder="ornek@email.com" required autocomplete="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="waitlist-name">İsim (isteğe bağlı)</label>
+            <input type="text" id="waitlist-name" class="form-input" placeholder="Adın" autocomplete="name" />
+          </div>
+
+          <button type="submit" id="waitlist-submit" class="btn-submit">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Beni Bilgilendir
+          </button>
+
+          <div id="waitlist-message" class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
        İLETİŞİM (Contact)
        ============================================================ -->
   <section class="contact" id="contact">
@@ -283,12 +336,14 @@
         <a href="#features">Özellikler</a>
         <a href="#how-it-works">Nasıl Çalışır</a>
         <a href="#vision">Vizyon</a>
+        <a href="#waitlist">Haberdar Ol</a>
         <a href="#contact">İletişim</a>
       </nav>
     </div>
   </footer>
 
-  <!-- Script -->
+  <!-- Scripts -->
   <script src="js/script.js"></script>
+  <script type="module" src="js/firebase.js"></script>
 </body>
 </html>
